@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Random;
 
 public class RandomPrimeNumber {
-    public char getPrimeNumber(int max) {
+    public int getPrimeNumber(int max) {
         List<Integer> primeNumbers = new ArrayList<>();
         if (max >= 2) {
             primeNumbers.add(2);
@@ -14,7 +14,7 @@ public class RandomPrimeNumber {
             }
         }
         int index = getRandomDigitCharacter(0, primeNumbers.size() - 1);
-        return Character.forDigit(primeNumbers.get(index), 10);
+        return primeNumbers.get(index);
     }
 
     public boolean isPrimeBruteForce(int number) {

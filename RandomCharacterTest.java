@@ -15,7 +15,9 @@ public class RandomCharacterTest {
                 System.out.println(d);
                 throw new Exception("getRandomDigitCharacter Failed.");
             }
-
+            System.out.println("Lower case letter -> " + lc);
+            System.out.println("Upper case letter -> " + uc);
+            System.out.println("Random digit letter -> " + d);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
